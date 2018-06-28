@@ -40,3 +40,50 @@ agreement_config = {
     "to_predict": [u"Auxsing", u"Auxplur"],
     "sample_depth": 8,
 }
+
+xor_config = {
+    "grammar": padded_xor_string_grammar,
+    "to_predict": [u"a", u"b"],
+    "sample_depth": 8,
+}
+
+unpadded_xor_config_2 = {
+    "grammar": xor_string_grammar,
+    "to_predict": [u"a", u"b"],
+    "sample_depth": 2,
+    "epochs": 1,
+}
+
+unpadded_xor_config_3 = {
+    "grammar": xor_string_grammar,
+    "to_predict": [u"a", u"b"],
+    "sample_depth": 3,
+    "epochs": 2
+}
+
+    
+unpadded_xor_config_4 = {
+    "grammar": xor_string_grammar,
+    "to_predict": [u"a", u"b"],
+    "sample_depth": 4,
+    "epochs": 3
+}
+
+    
+unpadded_xor_config = {
+    "grammar": xor_string_grammar,
+    "to_predict": [u"a", u"b"],
+    "sample_depth": 8,
+}
+
+boolean_config = {
+    "grammar": exp_eval_grammar,
+    "to_predict": [u"0", u"1"],
+    "sample_depth": 5,
+}
+
+xor_exp_config = {
+    "grammar": xor_exp_eval_grammar,
+    "to_predict": [u"0", u"1"],
+    "sample_depth": 5,
+}
